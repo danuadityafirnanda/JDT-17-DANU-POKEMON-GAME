@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --font-sans: 'Press Start 2P', monospace;
+  --font-heading: 'Press Start 2P', monospace;
+  --color-background: #0f172a;
+  --color-foreground: #e2e8f0;
+  --color-card: #1e293b;
+  --color-card-foreground: #e2e8f0;
+  --color-primary: #60a5fa;
+  --color-primary-foreground: #0f172a;
+  --color-secondary: #1e293b;
+  --color-secondary-foreground: #e2e8f0;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-accent: #1e3a5f;
+  --color-accent-foreground: #e2e8f0;
+  --color-destructive: #dc2626;
+  --color-border: #334155;
+  --color-input: #334155;
+  --color-ring: #60a5fa;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Press Start 2P', monospace;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 0 0 var(--border), 1px 0 0 var(--border);
+  }
+}
