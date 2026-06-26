@@ -2,6 +2,14 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/PressStart2P-Regular.woff2') format('woff2');
+}
+
 @theme inline {
   --font-sans: 'Press Start 2P', monospace;
   --font-heading: 'Press Start 2P', monospace;
